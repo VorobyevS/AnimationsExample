@@ -12,6 +12,7 @@
 		8813ECD3219AF0D700EDC94D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8813ECD1219AF0D700EDC94D /* Main.storyboard */; };
 		8813ECD5219AF0D800EDC94D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8813ECD4219AF0D800EDC94D /* Assets.xcassets */; };
 		8813ECD8219AF0D800EDC94D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8813ECD6219AF0D800EDC94D /* LaunchScreen.storyboard */; };
+		8813ECE0219B16A800EDC94D /* PlaneAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8813ECDF219B16A800EDC94D /* PlaneAnimationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		8813ECD4219AF0D800EDC94D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8813ECD7219AF0D800EDC94D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8813ECD9219AF0D800EDC94D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8813ECDF219B16A800EDC94D /* PlaneAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaneAnimationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				8813ECCD219AF0D700EDC94D /* AppDelegate.swift */,
 				8813ECCF219AF0D700EDC94D /* ViewController.swift */,
+				8813ECDF219B16A800EDC94D /* PlaneAnimationViewController.swift */,
 				8813ECD1219AF0D700EDC94D /* Main.storyboard */,
 				8813ECD4219AF0D800EDC94D /* Assets.xcassets */,
 				8813ECD6219AF0D800EDC94D /* LaunchScreen.storyboard */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8813ECD0219AF0D700EDC94D /* ViewController.swift in Sources */,
+				8813ECE0219B16A800EDC94D /* PlaneAnimationViewController.swift in Sources */,
 				8813ECCE219AF0D700EDC94D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

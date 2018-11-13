@@ -29,6 +29,7 @@ final class ViewController: UIViewController {
         startAnimationsQueue()
     }
     
+    
     private func setUpPreparation() {
         heyLabel.transform = CGAffineTransform(translationX: 0, y: viewHeight)
         

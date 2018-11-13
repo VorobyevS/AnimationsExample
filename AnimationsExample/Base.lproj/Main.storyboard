@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eHS-3r-ZVy">
+    <device id="retina5_9" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -9,34 +9,65 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Plane Animation View Controller-->
+        <scene sceneID="u1S-Xl-h5s">
+            <objects>
+                <viewController id="eHS-3r-ZVy" customClass="PlaneAnimationViewController" customModule="AnimationsExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xDG-cr-obr">
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plane" translatesAutoresizingMaskIntoConstraints="NO" id="8eB-hy-0Iw">
+                                <rect key="frame" x="79" y="288" width="85" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="2zk-ng-Qyh"/>
+                                    <constraint firstAttribute="height" constant="36" id="Amv-dE-Op1"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8eB-hy-0Iw" firstAttribute="leading" secondItem="MlO-xK-FPm" secondAttribute="leading" constant="35" id="L6R-i4-VbY"/>
+                            <constraint firstItem="MlO-xK-FPm" firstAttribute="bottom" secondItem="8eB-hy-0Iw" secondAttribute="bottom" constant="30" id="mE9-Y7-b0i"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MlO-xK-FPm"/>
+                    </view>
+                    <connections>
+                        <outlet property="planeImage" destination="8eB-hy-0Iw" id="Iyl-lK-rNO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gvx-oN-cTa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-499" y="25"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimationsExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hey" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gua-1m-Zyk">
-                                <rect key="frame" x="92" y="246" width="191" height="21"/>
+                                <rect key="frame" x="136" y="50" width="540" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.54265779256820679" green="0.17389345169067383" blue="0.40639936923980713" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preety" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oRQ-cg-BF4">
-                                <rect key="frame" x="92" y="340" width="191" height="21"/>
+                                <rect key="frame" x="136" y="144" width="540" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.54265779256820679" green="0.17389345169067383" blue="0.40639936923980713" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y16-qW-Y9N">
-                                <rect key="frame" x="92" y="293" width="191" height="21"/>
+                                <rect key="frame" x="136" y="97" width="540" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.54265779256820679" green="0.17389345169067383" blue="0.40639936923980713" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N2V-Ic-aSK">
-                                <rect key="frame" x="83" y="443" width="209" height="30"/>
+                                <rect key="frame" x="127" y="247" width="558" height="30"/>
                                 <color key="backgroundColor" red="0.54265779256820679" green="0.17389345169067383" blue="0.40639936923980713" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -54,7 +85,7 @@
                             <constraint firstItem="Y16-qW-Y9N" firstAttribute="top" secondItem="Gua-1m-Zyk" secondAttribute="bottom" constant="26" id="abF-Dh-0D5"/>
                             <constraint firstItem="Y16-qW-Y9N" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="92" id="cAz-2Y-soX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="N2V-Ic-aSK" secondAttribute="trailing" constant="83" id="kW1-KC-AGr"/>
-                            <constraint firstItem="Gua-1m-Zyk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="202" id="ndx-o9-7t5"/>
+                            <constraint firstItem="Gua-1m-Zyk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="ndx-o9-7t5"/>
                             <constraint firstItem="Gua-1m-Zyk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="92" id="or2-Ls-ZOj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Y16-qW-Y9N" secondAttribute="trailing" constant="92" id="ukS-AG-cLo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="N2V-Ic-aSK" secondAttribute="bottom" constant="305" id="yQI-oa-app"/>
@@ -70,6 +101,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="978" y="26"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="plane" width="85" height="34"/>
+    </resources>
 </document>
