@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6uL-5s-zCG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KWd-2Q-AAD">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -38,7 +38,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gvx-oN-cTa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1919" y="26"/>
+            <point key="canvasLocation" x="2334" y="26"/>
         </scene>
         <!--Linear Loading View Controller-->
         <scene sceneID="dTe-OB-hRC">
@@ -97,6 +97,64 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Am6-Sk-dpz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3072.8000000000002" y="25.862068965517242"/>
+        </scene>
+        <!--Ciricle View Controller-->
+        <scene sceneID="cmf-v5-PMZ">
+            <objects>
+                <viewController id="KWd-2Q-AAD" customClass="CiricleViewController" customModule="AnimationsExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oV1-CS-2Q7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1BT-Md-L9N" customClass="CircleView" customModule="AnimationsExample" customModuleProvider="target">
+                                <rect key="frame" x="137.66666666666666" y="194" width="100" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="7pv-vv-Rgh"/>
+                                    <constraint firstAttribute="width" constant="100" id="Jnf-53-rZn"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXN-3f-kZv">
+                                <rect key="frame" x="16" y="404" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.54265779260000002" green="0.17389345170000001" blue="0.40639936920000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopButtonClicked" destination="KWd-2Q-AAD" eventType="touchUpInside" id="79v-Ya-QW3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xR2-8u-4XG">
+                                <rect key="frame" x="16" y="334" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.54265779260000002" green="0.17389345170000001" blue="0.40639936920000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startButtonClicked" destination="KWd-2Q-AAD" eventType="touchUpInside" id="WT0-1s-qAI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fXN-3f-kZv" firstAttribute="top" secondItem="xR2-8u-4XG" secondAttribute="bottom" constant="40" id="8wz-6G-eI9"/>
+                            <constraint firstItem="1BT-Md-L9N" firstAttribute="centerX" secondItem="oV1-CS-2Q7" secondAttribute="centerX" id="H8M-1W-XYp"/>
+                            <constraint firstItem="xR2-8u-4XG" firstAttribute="top" secondItem="1BT-Md-L9N" secondAttribute="bottom" constant="40" id="MbB-id-yyU"/>
+                            <constraint firstItem="1BT-Md-L9N" firstAttribute="top" secondItem="v4f-ig-oS1" secondAttribute="top" constant="150" id="b7S-Zp-LlJ"/>
+                            <constraint firstItem="xR2-8u-4XG" firstAttribute="leading" secondItem="v4f-ig-oS1" secondAttribute="leading" constant="16" id="hIE-wB-eyy"/>
+                            <constraint firstItem="v4f-ig-oS1" firstAttribute="trailing" secondItem="xR2-8u-4XG" secondAttribute="trailing" constant="16" id="lnY-db-90V"/>
+                            <constraint firstItem="v4f-ig-oS1" firstAttribute="trailing" secondItem="fXN-3f-kZv" secondAttribute="trailing" constant="16" id="uuf-VD-WDU"/>
+                            <constraint firstItem="fXN-3f-kZv" firstAttribute="leading" secondItem="v4f-ig-oS1" secondAttribute="leading" constant="16" id="ydJ-EX-vfe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="v4f-ig-oS1"/>
+                    </view>
+                    <connections>
+                        <outlet property="loadingView" destination="1BT-Md-L9N" id="yv3-rY-G2I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kZS-WN-Mg1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3975" y="26"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -159,7 +217,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="978" y="26"/>
+            <point key="canvasLocation" x="1596" y="26"/>
         </scene>
     </scenes>
     <resources>

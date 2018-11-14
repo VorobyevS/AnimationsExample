@@ -15,6 +15,8 @@
 		8813ECE0219B16A800EDC94D /* PlaneAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8813ECDF219B16A800EDC94D /* PlaneAnimationViewController.swift */; };
 		8861527D219C167000034978 /* LoadingLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8861527C219C167000034978 /* LoadingLineView.swift */; };
 		88DAF956219C1E34006A41FC /* LinearLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DAF955219C1E34006A41FC /* LinearLoadingViewController.swift */; };
+		88DAF958219C388D006A41FC /* CiricleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DAF957219C388D006A41FC /* CiricleViewController.swift */; };
+		88DAF95C219C3D04006A41FC /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DAF95B219C3D04006A41FC /* CircleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		8813ECDF219B16A800EDC94D /* PlaneAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaneAnimationViewController.swift; sourceTree = "<group>"; };
 		8861527C219C167000034978 /* LoadingLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingLineView.swift; sourceTree = "<group>"; };
 		88DAF955219C1E34006A41FC /* LinearLoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearLoadingViewController.swift; sourceTree = "<group>"; };
+		88DAF957219C388D006A41FC /* CiricleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CiricleViewController.swift; sourceTree = "<group>"; };
+		88DAF95B219C3D04006A41FC /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 				8813ECCF219AF0D700EDC94D /* ViewController.swift */,
 				8813ECDF219B16A800EDC94D /* PlaneAnimationViewController.swift */,
 				88DAF955219C1E34006A41FC /* LinearLoadingViewController.swift */,
+				88DAF957219C388D006A41FC /* CiricleViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -85,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				8861527C219C167000034978 /* LoadingLineView.swift */,
+				88DAF95B219C3D04006A41FC /* CircleView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -164,6 +170,8 @@
 				8861527D219C167000034978 /* LoadingLineView.swift in Sources */,
 				88DAF956219C1E34006A41FC /* LinearLoadingViewController.swift in Sources */,
 				8813ECE0219B16A800EDC94D /* PlaneAnimationViewController.swift in Sources */,
+				88DAF958219C388D006A41FC /* CiricleViewController.swift in Sources */,
+				88DAF95C219C3D04006A41FC /* CircleView.swift in Sources */,
 				8813ECCE219AF0D700EDC94D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
